@@ -1,5 +1,5 @@
 {% set name = "ktfmt" %}
-{% set version = "0.52" %}
+{% set version = "0.53" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/facebook/ktfmt/archive/v{{ version }}.tar.gz
-  sha256: dc4e97265004e399ea14f49bb82944de88c29d1e8d105ed68caef453e0d8c6e0
+  sha256: 351cd93d8742efaedef800c36b6744d8e7d7abf8558333a92b7747d9a364d530
 
 build:
   noarch: generic
