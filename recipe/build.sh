@@ -16,6 +16,7 @@ tee ${PREFIX}/bin/${PKG_NAME} << EOF
 #!/bin/sh
 exec \${JAVA_HOME}/bin/java -jar \${CONDA_PREFIX}/libexec/ktfmt/ktfmt.jar "\$@"
 EOF
+chmod +x ${PREFIX}/bin/${PKG_NAME}
 
 tee ${PREFIX}/bin/${PKG_NAME}.cmd << EOF
 call %JAVA_HOME%\bin\java -jar %CONDA_PREFIX%\libexec\ktfmt\ktfmt.jar %*

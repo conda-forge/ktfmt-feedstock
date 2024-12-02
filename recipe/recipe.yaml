@@ -1,17 +1,17 @@
-{% set name = "ktfmt" %}
-{% set version = "0.53" %}
+context:
+  version: 0.53
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ktfmt
+  version: ${{ version }}
 
 source:
-  url: https://github.com/facebook/ktfmt/archive/v{{ version }}.tar.gz
+  url: https://github.com/facebook/ktfmt/archive/v${{ version }}.tar.gz
   sha256: 351cd93d8742efaedef800c36b6744d8e7d7abf8558333a92b7747d9a364d530
 
 build:
-  noarch: generic
   number: 0
+  noarch: generic
 
 requirements:
   build:
@@ -20,18 +20,18 @@ requirements:
   run:
     - openjdk
 
-test:
-  commands:
-    - ktfmt --help
+tests:
+  - script:
+      - ktfmt --help
 
 about:
-  home: https://github.com/facebook/ktfmt
   license: Apache-2.0
   license_file:
     - LICENSE
     - core/target/generated-resources/licenses/
   summary: A program that reformats Kotlin source code to comply with the common community standard for Kotlin code conventions.
-  dev_url: https://github.com/facebook/ktfmt
+  homepage: https://github.com/facebook/ktfmt
+  repository: https://github.com/facebook/ktfmt
 
 extra:
   recipe-maintainers:
