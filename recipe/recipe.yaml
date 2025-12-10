@@ -14,7 +14,7 @@ build:
   noarch: generic
 
 requirements:
-  build:
+  host:
     - maven
     - openjdk =24
   run:
