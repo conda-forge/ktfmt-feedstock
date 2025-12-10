@@ -16,7 +16,7 @@ build:
 requirements:
   host:
     - maven
-    - openjdk =24
+    - openjdk =17
   run:
     - openjdk
 
