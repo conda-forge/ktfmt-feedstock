@@ -16,7 +16,7 @@ build:
 requirements:
   build:
     - maven
-    - openjdk
+    - openjdk =24
   run:
     - openjdk
 
@@ -28,7 +28,7 @@ about:
   license: Apache-2.0
   license_file:
     - LICENSE
-    - core/target/generated-resources/licenses/
+    - build/reports/dependency-license/
   summary: A program that reformats Kotlin source code to comply with the common community standard for Kotlin code conventions.
   homepage: https://github.com/facebook/ktfmt
   repository: https://github.com/facebook/ktfmt
