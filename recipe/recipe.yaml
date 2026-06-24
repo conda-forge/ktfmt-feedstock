@@ -1,5 +1,5 @@
 context:
-  version: "0.63"
+  version: "0.64"
 
 package:
   name: ktfmt
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/facebook/ktfmt/archive/v${{ version }}.tar.gz
-  sha256: 1f284160c50b3309d2a61ce22f9bd60aa7c8fc86d16aae0bac55ac132b242460
+  sha256: e36494b88d8f42aad412573fbc834e3539e66aab40dba00e5e3433a6b04f0bfc
 
 build:
   number: 0
